@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/newsletterStyles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <script src="https://kit.fontawesome.com/0f96c8004a.js" crossorigin="anonymous"></script>
+    <title>Pridruži se nam</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/index.html"
+        ><img src="/assets/logo.png" alt="Logo" class="logo"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="/pages/main/newsletter.html" class="nav-item">Newsletter</a></li>
+          <li><a href="/pages/main/blog.html" class="nav-item">Blog</a></li>
+          <li><a href="/pages/auth/login.html" class="nav-item">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="newsletter-cta">
+      <h1>Naročite se na naše novice</h1>
+      <p>
+        Pridružite se našemu ekskluzivnemu Newsletterju in bodite prvi, ki boste
+        izvedeli za najnovejše metode in pristope k vzgoji, ki temeljijo na miru
+        in razumevanju. Naš mesečni bilten ponuja bogato zbirko nasvetov,
+        člankov in intervjujev s strokovnjaki s področja vzgoje in psihologije,
+        ki so preprosti za branje in lahko aplicirani v vsakdanjem življenju.
+      </p>
+      <h3>
+        <b>Z naročilom na naš Newsletter boste pridobili dostop do: </b>
+      </h3>
+      <p>
+        <b>Praktičnih vodnikov:</b> Kako uporabiti učinkovite strategije za
+        reševanje vsakdanjih vzgojnih izzivov.
+      </p>
+      <p>
+        <b>Izobraževalnih virov:</b> Zadnje raziskave in dognanja s področja
+        otroške psihologije in vzgoje.
+      </p>
+      <p>
+        <b>Inspirativnih zgodb:</b> Resnične zgodbe staršev, ki so s pomočjo
+        naših metod dosegli pozitivne spremembe v družinskem življenju.
+      </p>
+      <p>
+        <b>Ekskluzivnih popustov: </b> Posebne ponudbe in popusti za naše
+        naročnike na prihajajoče delavnice, knjige in druge izdelke.
+      </p>
+      <p>
+        Vse to in še več! Prijavite se zdaj in si zagotovite dragoceno znanje,
+        ki bo obogatilo vašo vzgojno izkušnjo. Vaš e-poštni naslov bo pri nas
+        varen in obljubljamo, da ga bomo uporabljali le za pošiljanje koristnih
+        in relevantnih vsebin.
+      </p>
+      <form id="newsletterForm">
+        <input
+          type="email"
+          id="newsletterEmail"
+          placeholder="Vnesite vaš e-poštni naslov"
+          required
+        />
+        <button type="submit">Naroči se</button>
+      </form>
+    </div>
+
+<!-- Then, initialize Firebase and define 'db' -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+
+<script src="/javascript/firebase.js"></script>
+<script src="/javascript/newsletterSubscriptionHandler.js"></script>
+  </body>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h3>Kontakt</h3>
+      <p>
+        Če imate kakršnakoli vprašanja, nas prosim kontaktirajte na:
+        info@primer.si
+      </p>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Mirna vzgoja. Vse pravice pridržane.</p>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+    <title>Nakup knjige</title>
+    <link rel="stylesheet" href="/styles/buyPage.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <button id="logoutButton" class="logout-button">Odjava</button>
+    </div>
+    <div class="container">
+      <div class="text-section">
+        <h1>Nakup knjige</h1>
+        <p>
+          <b>Praktični Vodnik:</b> Knjiga ponuja niz praktičnih nasvetov in
+          tehnik za moderno starševstvo, ki temelji na najnovejših psiholoških
+          raziskavah. <br /><br />
+          <b>Razumevanje otrokovega razvoja:</b> Podrobno obravnava različne
+          faze otrokovega čustvenega in kognitivnega razvoja in kako lahko
+          starši podpirajo ta razvoj. <br /><br />
+          <b>Empatija in Komunikacija:</b> Poudarja pomen empatije in učinkovite
+          komunikacije med starši in otroki za vzpostavljanje močnih družinskih
+          vezi. <br /><br />
+          <b>Pozitivna Disciplina: </b> Razlaga, kako lahko starši uporabljajo
+          pozitivno disciplino za vzgojo odgovornih in samostojnih otrok.
+          <br /><br />
+          <b>Osebna Rast:</b> Spodbuja starše k samorefleksiji in osebnemu
+          razvoju, da postanejo zgled svojim otrokom. <br /><br />
+          <b> Primeri iz Življenja:</b> Vključuje resnične primere in študije
+          primerov, ki ilustrirajo ključne koncepte v akciji. <br /><br />
+          <b>Vaje in Dejavnosti: </b> Vsebuje interaktivne vaje in dejavnosti,
+          ki jih lahko starši izvajajo s svojimi otroki. <br /><br />
+          <b>Za Starše Vseh Starostnih Skupin:</b> Ne glede na to, ali ste novi
+          starš ali izkušen vzgojitelj, knjiga ponuja vpoglede, ki so koristni
+          na vseh stopnjah starševstva.
+        </p>
+        <div class="button-and-price">
+          <span class="price-tag">Cena: 9.99€</span>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+        
+        <stripe-buy-button
+          buy-button-id="buy_btn_1OEgeVDvcvzGYzeiJAB1GCzR"
+          publishable-key="pk_test_51OEgT0DvcvzGYzei9uXlZZ7LrOszpfKtxdaJ59gLlpudxcix8q2fUTOouVjU2TbnRDhqBKXSPxT21hkHNiVI8Vqc00quXXV4rU"
+        >
+        </stripe-buy-button>
+          </stripe-buy-button>
+        </div>
+      </div>
+      <div class="paypal-button-container"></div>
+      <div class="image-section">
+        <img src="/assets/Knjiga2.png" alt="Picture of the book" />
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/javascript/firebase.js"></script>
+    <script src="/javascript/logout.js"></script>
+  </body>
+</html>

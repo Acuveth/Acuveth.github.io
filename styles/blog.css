@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
+}
+/*Navbar*/
+.navbar {
+  color: #fff;
+  padding-right: 100px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo {
+  width: 70px; /* You can set a specific width if you like */
+  height: 70px; /* Adjust the height as needed */
+  object-fit: contain; /* This will make sure the image is scaled properly */
+  margin: 1rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: #333;
+  padding: 15px;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: rgb(13, 212, 193, 0.1);
+  border-radius: 10px;
+}
+
+/* Main Content */
+.blog-posts {
+  width: 80%;
+  padding: 20px;
+  margin: auto auto;
+}
+/*Aricle*/
+.blog-article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(254, 248, 241, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  margin: 20px;
+  width: 80%;
+}
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.article-image {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.article-content {
+  margin-left: 3rem;
+}
+.post-date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.blog-article h2 {
+  font-size: 32px;
+}
+.blog-article a {
+  text-decoration: none;
+  color: #333;
+}
+.blog-article a:hover {
+  opacity: 0.7;
+}
+
+/*Footer*/
+.site-footer {
+  background-color: rgb(254, 248, 241, 0.4);
+  color: #6c757d;
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-content h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #0dd4c1;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+.fa-brands {
+  font-size: 24px; /* Adjust the size of the icons as needed */
+}

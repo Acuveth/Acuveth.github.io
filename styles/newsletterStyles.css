@@ -1,0 +1,144 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.navbar {
+  color: #fff;
+  padding-right: 100px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo {
+  width: 70px; /* You can set a specific width if you like */
+  height: 70px; /* Adjust the height as needed */
+  object-fit: contain; /* This will make sure the image is scaled properly */
+  margin: 1rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: #333;
+  padding: 15px;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: rgb(13, 212, 193, 0.1);
+  border-radius: 10px;
+}
+
+.newsletter-cta {
+  background-color: rgb(254, 248, 241, 0.4); /* Light beige background */
+  margin: auto auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 50%;
+}
+
+.newsletter-cta h1 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.newsletter-cta form {
+  margin-top: 20px;
+}
+
+.newsletter-cta input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 400px;
+  margin-right: 10px;
+}
+
+.newsletter-cta button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0dd4c1;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.newsletter-cta button:hover {
+  background-color: #13b2a2; /* Darken button on hover/focus for interactivity */
+  transform: scale(1.05); /* Slightly enlarge button on hover/focus */
+}
+.site-footer {
+  background-color: rgb(254, 248, 241, 0.4);
+  color: #6c757d;
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-content h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #0dd4c1;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+.fa-brands {
+  font-size: 24px; /* Adjust the size of the icons as needed */
+}

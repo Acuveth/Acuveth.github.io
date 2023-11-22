@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+
+<script src="/javascript/firebase.js"></script>
+    <script src="/javascript/index.js"></script>
+    <script src="https://kit.fontawesome.com/0f96c8004a.js" crossorigin="anonymous"></script>
+    <title>Mirna vzgoja: Kako vzgajati brez kričanja</title>
+  </head>
+  <body>
+    <div class="navbar">
+     <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo" /></a> 
+      <nav>
+        <ul>
+          <li><a href="/pages/main/newsletter.html" class="nav-item">Newsletter</a></li>
+          <li><a href="/pages/main/blog.html" class="nav-item">Blog</a></li>
+          <li><a href="/pages/auth/login.html" class="nav-item">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-section">
+      <div class="content">
+        <h1>Mirna vzgoja: Kako vzgajati brez kričanja</h1>
+        <p>Odkrijte učinkovite in ljubeče pristope za vzgojo vaših otrok</p>
+        <button class="download-button" id="downloadButton">Prenesi zdaj</button>
+        <div class="price-tag">Po ekskluzivni ceni 9.99€</div>
+      </div>
+      <div class="image-container">
+        <img src="assets/Knjiga2.png" alt="eBook image" />
+      </div>
+    </div>
+    <section class="partner-logos">
+      <h1>Svetovno priznana knjiga katero so podprli</h1>
+      <div class="logos-container">
+          <img src="assets/random1.png" alt="Logo 1" class="logo">
+          <img src="assets/nyt.png" alt="Logo 2" class="logo">
+          <img src="assets/agold-book.png" alt="Logo 3" class="logo">
+          <img src="assets/random2.png" alt="Logo 1" class="logo">
+          <img src="assets/random3.png" alt="Logo 1" class="logo">
+          <img src="assets/random4.png" alt="Logo 1" class="logo">
+      </div>
+  </section>
+  
+    <div class="review-section">
+      <div class="review-carousel">
+        <div class="review-card">
+          <img
+            src="assets/Human1.jpg"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <blockquote>
+            "Neverjetno! 'Mirna vzgoja: Kako vzgajati brez kričanja' je odprla
+            nov pogled na način, kako komuniciramo z našimi otroki. Naučila nas
+            je, da je potrpljenje ključ do boljšega razumevanja in da je
+            poslušanje največ, kar lahko ponudimo. Priporočam vsaki družini."
+            <footer>- Jane Doe</footer>
+          </blockquote>
+        </div>
+        <div class="review-card">
+          <img
+            src="assets/photo2.jpg"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <blockquote>
+            "Po branju te knjige sem se zavedel, kako pomembna je konsistenca in
+            mirnost v vzgoji. Tehnike, ki jih avtor predlaga, so preproste, a
+            učinkovite, in že vidimo velike spremembe v obnašanju naših otrok.
+            To je knjiga, ki bi jo moral prebrati vsak starš."
+            <footer>- The rock</footer>
+          </blockquote>
+        </div>
+        <div class="review-card">
+          <img
+            src="assets/Human2.jpg"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <blockquote>
+            "Ta knjiga mi je dala upanje in orodja, da postanem boljši starš.
+            Zdaj razumem, da kričanje ni odgovor in da lahko z ljubeznijo in
+            doslednostjo dosežemo veliko več. 'Mirna vzgoja: Kako vzgajati brez
+            kričanja' je obvezno branje za vse, ki želijo izboljšati družinske
+            odnose."
+            <footer>- Emma Wilson</footer>
+          </blockquote>
+        </div>
+        <div class="review-card">
+          <img
+            src="assets/Human3.jpg"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <blockquote>
+            "Knjiga 'Mirna vzgoja: Kako vzgajati brez kričanja' je bila za mene
+            pravo odkritje. Metode in nasveti v njej so mi pomagali razumeti,
+            kako pomembno je ohranjati mirno in spodbudno okolje doma. Rezultati
+            so vidni vsak dan, moji otroci so bolj sodelujoči in srečnejši.
+            Vsakemu staršu, ki išče harmonijo v družinskem življenju, priporočam
+            to branje!"
+            <footer>- Miha Novak</footer>
+          </blockquote>
+        </div>
+        <!-- Add as many review-item divs as you have reviews -->
+      </div>
+    </div>
+    <section class="book-description">
+      <h2>O knjigi</h2>
+      <p>Spoštovani starši in skrbniki,<br><br>Predstavljajte si, da se konča vsakodnevni boj z uporom in kričanjem – "Mirna vzgoja: Kako vzgajati brez kričanja" je vaša rešitev. Ta knjiga ni le še en vzgojni priročnik; je rezultat let raziskovanja in resničnih izkušenj, ki jih delijo starši z vsega sveta. Razlikuje se po svojem empatičnem pristopu in znanstveno podprtih metodah, ki nudijo trajne rezultate. </p>
+        <p><b>Problem, ki ga rešujemo:</b> Vsak starš se sooča s trenutki, ko se zdi, da je kričanje edini način, da se sliši. A kaj, ko kričanje ne zgradi mostov, ampak postavlja zidove.</p>
+          <p><b>Naša rešitev:</b> "Mirna vzgoja" vam ponuja alternativo – orodja za gradnjo odnosa, ki temelji na spoštovanju in razumevanju. Ne samo da se boste naučili, kako ostati mirni v stresnih situacijah, ampak boste otroku pomagali razviti veščine, ki mu bodo koristile celo življenje.</p>
+      <p>
+        Mirna vzgoja: Kako vzgajati brez kričanja" je knjiga, ki na novo
+        osvetljuje koncepte vzgoje. V njej avtor raziskuje pomen mirne
+        komunikacije in kako le-ta vpliva na razvoj otroka. Knjiga bralca
+        popelje skozi različne vzgojne situacije, od upiranja in izpadov jeze do
+        vsakdanjih izzivov, kot so jutranje priprave na šolo in večerne rutine.
+        Avtor predstavlja alternative tradicionalnim, avtoritarnim vzgojnim
+        metodam, ki pogosto vodijo v kričanje in konflikte. S praktičnimi
+        primeri in lahko razumljivimi nasveti "Mirna vzgoja" staršem ponuja
+        orodja, da se soočijo z izzivi brez izgube živcev. Od strategij za
+        spodbujanje sodelovanja do metod za učinkovito reševanje konfliktov, ta
+        knjiga zagotavlja celostni pristop k vzgoji. Poseben poudarek je na
+        razvoju čustvene inteligence tako pri otrocih kot pri starših, kar je
+        ključno za vzpostavljanje globokega in trajnega medsebojnega
+        razumevanja. Avtor podaja tudi nasvete za samopomoč za starše, ki se
+        soočajo s stresom, in poudarja, kako je skrb za lastno duševno zdravje
+        nujna za vzpostavitev zdravega domačega okolja. Knjiga je napisana s
+        sočutjem in razumevanjem, kar bralcu omogoča, da se poistoveti z
+        avtorjevimi izkušnjami in nasveti. "Mirna vzgoja: Kako vzgajati brez
+        kričanja" ni le priročnik za starše, ampak je tudi izvor navdiha in
+        podpore za vse, ki si želijo ustvariti harmoničen dom
+      </p>
+      <h1>Kaj boste dobili ob nakupu</h1>
+      <p>
+        <b>Praktični Vodnik:</b> Knjiga ponuja niz praktičnih nasvetov in
+        tehnik za moderno starševstvo, ki temelji na najnovejših psiholoških
+        raziskavah. <br /><br />
+        <b>Razumevanje otrokovega razvoja:</b> Podrobno obravnava različne
+        faze otrokovega čustvenega in kognitivnega razvoja in kako lahko
+        starši podpirajo ta razvoj. <br /><br />
+        <b>Empatija in Komunikacija:</b> Poudarja pomen empatije in učinkovite
+        komunikacije med starši in otroki za vzpostavljanje močnih družinskih
+        vezi. <br /><br />
+        <b>Pozitivna Disciplina: </b> Razlaga, kako lahko starši uporabljajo
+        pozitivno disciplino za vzgojo odgovornih in samostojnih otrok.
+        <br /><br />
+        <b>Osebna Rast:</b> Spodbuja starše k samorefleksiji in osebnemu
+        razvoju, da postanejo zgled svojim otrokom. <br /><br />
+        <b> Primeri iz Življenja:</b> Vključuje resnične primere in študije
+        primerov, ki ilustrirajo ključne koncepte v akciji. <br /><br />
+        <b>Vaje in Dejavnosti: </b> Vsebuje interaktivne vaje in dejavnosti,
+        ki jih lahko starši izvajajo s svojimi otroki. <br /><br />
+        <b>Za Starše Vseh Starostnih Skupin:</b> Ne glede na to, ali ste novi
+        starš ali izkušen vzgojitelj, knjiga ponuja vpoglede, ki so koristni
+        na vseh stopnjah starševstva.
+      </p>
+    </section>
+    <section class="learning-outcomes">
+      <h1>Kaj se boste naučili</h1>
+      <ul>
+        <h2>1. Komunikacijske veščine brez konflikta:</h2>
+        <li>
+          Naučili se bodo, kako uporabiti učinkovite komunikacijske strategije,
+          ki preprečujejo kričanje in jezo, in kako vzpostaviti dialog z otroki,
+          ki temelji na medsebojnem spoštovanju in razumevanju.
+        </li>
+        <h2>2. Čustvena samoregulacija:</h2>
+        <li>
+          Spoznali bodo metode za nadzor lastnih čustvenih odzivov v stresnih
+          situacijah, kar omogoča, da ostanejo mirni in zbrani, ko se soočajo z
+          izzivi v vzgoji.
+        </li>
+        <h2>3. Pozitivne vzgojne tehnike:</h2>
+        <li>
+          Razvili bodo razumevanje pozitivnih vzgojnih tehnik, ki spodbujajo
+          sodelovanje in samostojnost otrok, ter kako tehnike nagrajevanja in
+          pozitivne okrepitve vplivajo na otrokovo vedenje.
+        </li>
+        <h2>4. Razvoj empatije in čustvene inteligence:</h2>
+        <li>
+          Seznanili se bodo z načini, kako lahko spodbujajo in razvijajo
+          empatijo ter čustveno inteligenco pri svojih otrocih, kar je ključno
+          za razvoj močnih in zdravih medosebnih odnosov.
+        </li>
+        <h2>5. Osebna rast in refleksija:</h2>
+        <li>
+          Knjiga bo spodbudila bralce k samorefleksiji o lastnih vzgojnih
+          metodah in jim pomagala razumeti, kako njihovo vedenje vpliva na
+          otrokovo dojemanje sveta in oblikovanje osebnosti.
+        </li>
+      </ul>
+    </section>
+    <section class="faq-section">
+      <h2>Pogosta vprašanja</h2>
+      <div class="faq-item">
+          <h3>Kako se ta produkt razlikuje od ostalih?</h3>
+          <p>Naš pristop je unikaten, ker združuje teorijo in praktične izkušnje ter je enostaven za uporabo v vsakodnevnem življenju. Poudarek ni samo na "kaj narediti", ampak "kako narediti".</p>
+      </div>
+      <div class="faq-item">
+          <h3>Kako dobim produkt?</h3>
+          <p>Produkt lahko prenesete neposredno po spletni nakupu, dostop pa vam bo omogočen takoj.</p>
+      </div>
+      <div class="faq-item">
+          <h3>Zakaj ravno mi?</h3>
+          <p>Sem priznan strokovnjak z dolgoletnimi izkušnjami na področju vzgoje in psihologije otrok.</p>
+      </div>
+      <div class="faq-item">
+          <h3>Zakaj potrebujem ta produkt ravno zdaj?</h3>
+          <p>V času nenehnih sprememb in izzivov je ključnega pomena, da razvijete trajnostne in učinkovite vzgojne pristope.</p>
+      </div>
+      <div class="faq-item">
+          <h3>Zakaj takšna cena produkta?</h3>
+          <p>Želimo, da je naš produkt dostopen širšemu krogu ljudi, obenem pa zagotavljamo visoko kakovost vsebine.</p>
+      </div>
+      <div class="faq-item">
+          <h3>Kaj pa če produkt ne zadovolji mojih pričakovanj?</h3>
+          <p>Če knjiga ne izpolni vaših pričakovanj, vam ponujamo garancijo zadovoljstva. Pišite nam, in skupaj bomo našli rešitev.</p>
+      </div>
+  </section>
+  <section class="cta-section">
+    <h2>Pridružite se nam zdaj!</h2>
+    <p>Postanite del naše skupnosti in odkrijte najboljše strategije za vzgojo otrok.</p>
+    <a href="/pages/auth/login.html" class="cta-button">Kupi knjigo</a>
+</section>
+<section class="newsletter-section">
+  <h2>Naročite se na naše novice</h2>
+  <p>Pridobite ekskluzivne nasvete in najnovejše vsebine, ki jih pošiljamo neposredno v vaš nabiralnik.</p>
+  <form class="newsletter-form" id="newsletterForm" action="your-server-side-script" method="POST">
+      <input id="newsletterEmail" type="email" name="email" placeholder="Vnesite vaš e-poštni naslov" required>
+      <button type="submit" class="subscribe-button">Naroči se</button>
+  </form>
+</section>
+
+  </body>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h3>Kontakt</h3>
+      <p>
+        Če imate kakršnakoli vprašanja, nas prosim kontaktirajte na:
+        info@primer.si
+      </p>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Mirna vzgoja. Vse pravice pridržane.</p>
+    </div>
+  </footer>
+</html>

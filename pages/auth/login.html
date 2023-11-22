@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0f96c8004a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+    <title>Prijava</title>
+    <link rel="stylesheet" href="/styles/login.css" />
+  </head>
+  <body>
+    <a href="/index.html" class="back-button"
+      ><i class="fa-solid fa-arrow-left"></i
+    ></a>
+    <div class="login-container">
+      <form class="login-form" id="loginForm">
+        <h2>Prijava</h2>
+        <div class="input-group">
+          <label for="email">Vaš Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email"
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Geslo:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Geslo"
+          />
+        </div>
+        <button type="submit">Prijavi se</button>
+        <a href="/pages/auth/register.html" class="register-button"
+          >Nimate še računa?</a
+        >
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="/javascript/firebase.js"></script>
+    <script src="/javascript/login.js"></script>
+  </body>
+</html>

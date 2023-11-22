@@ -1,0 +1,468 @@
+/* Base styles */
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
+}
+
+p {
+  margin: 0rem;
+  margin-bottom: 2rem;
+}
+
+/* Navigation bar styles */
+.navbar {
+  color: #fff;
+  padding-right: 100px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo {
+  width: 70px; /* You can set a specific width if you like */
+  height: 70px; /* Adjust the height as needed */
+  object-fit: contain; /* This will make sure the image is scaled properly */
+  margin: 1rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: #333;
+  padding: 15px;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: rgb(13, 212, 193, 0.1);
+  border-radius: 10px;
+}
+
+/* Main section styles */
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+}
+
+.main-section .content h1 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.main-section .content p {
+  font-size: 1.2rem;
+}
+.content {
+  display: flex;
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically if you want vertical centering */
+  flex-direction: column; /* Stacks children vertically */
+  margin: 0rem;
+  padding: 0rem;
+}
+.content h1 {
+  margin: 0rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  line-height: 1em;
+  color: #333;
+}
+.download-button {
+  background-color: #0dd4c1;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-button:hover {
+  background-color: #13b2a2; /* Darken button on hover/focus for interactivity */
+  transform: scale(1.05); /* Slightly enlarge button on hover/focus */
+}
+
+.price-tag {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.image-container {
+  max-width: 50%;
+}
+
+.image-container img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Review section styles */
+.review-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.review-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Add any additional styles for hover effects, transitions, or animations as desired */
+.review-card {
+  background: rgb(254, 248, 241, 0.4);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.profile-pic {
+  object-fit: cover;
+  width: 80px; /* Adjust size as needed */
+  height: 80px;
+  border-radius: 50%; /* Makes the image round */
+  border: 2px solid rgb(254, 248, 241); /* Optional: Adds a border around the image */
+  position: absolute;
+  top: -40px; /* Half the height to pull it above the card */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the image horizontally */
+  background: rgb(254, 248, 241);
+  padding: 5px; /* Optional: If you want some space between the image border and its content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  padding-top: 40px; /* Makes space for the circular image */
+}
+
+blockquote footer {
+  text-align: center;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  color: #333;
+}
+.book-description {
+  background-color: rgb(254, 248, 241, 0.4); /* Light beige background */
+  padding: 40px;
+  border-radius: 10px;
+  margin: auto auto;
+  max-width: 80%; /* Set a max-width for better readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  color: #333; /* Dark gray color for text for readability */
+}
+
+.book-description h2 {
+  text-align: center;
+  color: #555; /* Slightly lighter color for the header */
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.book-description h1 {
+  color: #555;
+}
+
+.book-description p {
+  font-size: 1rem; /* Standard font size for the description */
+  line-height: 1.6; /* Line height for better readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+  color: #666; /* Lighter text color for the description */
+}
+
+/* Add responsive design rules if needed */
+@media (max-width: 768px) {
+  .book-description {
+    padding: 20px;
+  }
+}
+.learning-outcomes {
+  border-radius: 10px;
+
+  padding: 40px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.learning-outcomes h1 {
+  color: #333;
+  font-size: 36px; /* Clear, large font size */
+  margin-bottom: 16px;
+  text-align: center; /* Center align the heading */
+  font-weight: 600; /* Slightly bolder font for the heading */
+}
+
+.learning-outcomes h2 {
+  color: #333;
+  font-size: 18px; /* Clear, large font size */
+  margin-bottom: 16px;
+  margin-left: 2rem;
+  font-weight: 600; /* Slightly bolder font for the heading */
+}
+.learning-outcomes ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.learning-outcomes ul li {
+  background-color: rgb(
+    254,
+    248,
+    241,
+    0.4
+  ); /* Slightly off-white background for each list item */
+  margin-bottom: 10px; /* Space between list items */
+  padding: 15px;
+  border-left: 4px solid #0dd4c1; /* Colored bar on the left for accent */
+  border-radius: 4px; /* Slightly rounded corners for list items */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.learning-outcomes ul li:hover {
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover for list items */
+}
+
+/* Font and color adjustments for better readability */
+.learning-outcomes ul li p {
+  color: #555;
+  font-size: 16px; /* Comfortable reading size */
+  line-height: 1.6; /* Adequate line spacing for readability */
+  text-align: left; /* Align text to the left */
+}
+.site-footer {
+  background-color: rgb(254, 248, 241, 0.4);
+  color: #6c757d;
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-content h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #0dd4c1;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+.fa-brands {
+  font-size: 24px; /* Adjust the size of the icons as needed */
+}
+.faq-section {
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.faq-item {
+  background-color: rgb(254, 248, 241, 0.4);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Optional: Add some interactive styles */
+.faq-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.partner-logos {
+  color: #333;
+  text-align: center; /* Center align the text and logos */
+  padding: 20px 0; /* Padding around the section */
+}
+
+.partner-logos h1 {
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center; /* Center logos horizontally */
+  align-items: center; /* Align logos vertically */
+  gap: 20px; /* Space between logos */
+}
+
+.logo {
+  min-width: 100px;
+  max-width: 200px; /* Maximum width for each logo */
+  height: auto; /* Keep the aspect ratio of the logos */
+  background: transparent;
+}
+.cta-section {
+  background-color: rgb(255, 230, 202, 0.5); /* A bright, inviting color */
+  color: #333;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.cta-section h2 {
+  font-size: 2em; /* Large, attention-grabbing title */
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0dd4c1; /* A contrasting button color */
+  color: #ffffff; /* Button text color */
+  padding: 15px 320px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #13b2a2; /* Darken button on hover/focus for interactivity */
+  transform: scale(1.05); /* Slightly enlarge button on hover/focus */
+}
+
+.newsletter-section {
+  background-color: rgb(255, 230, 202, 0.5);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.newsletter-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.newsletter-section p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 60%;
+  flex-grow: 1;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0dd4c1;
+  color: white;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #13b2a2; /* Darken button on hover/focus for interactivity */
+  transform: scale(1.05); /* Slightly enlarge button on hover/focus */
+}

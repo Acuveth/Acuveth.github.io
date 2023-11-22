@@ -1,0 +1,98 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.text-section {
+  padding: 50px;
+  background-color: rgb(255, 230, 202, 0.5); /* Light grey background */
+  text-align: left;
+  width: 50%;
+  height: 700px;
+}
+.text-section h1 {
+  text-align: center;
+}
+.image-section {
+  width: auto;
+  height: 700px;
+  padding: 50px;
+  background-color: rgb(255, 230, 202, 0.5); /* Orange background */
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  max-width: auto; /* Adjust as needed */
+}
+
+.price-tag {
+  color: #333; /* Dark text color for contrast */
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block; /* Align with the button */
+  margin-bottom: 0.5rem;
+  font-size: 24px;
+}
+.button-and-price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  text-align: center; /* Center the contents */
+}
+h1 {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-section,
+  .text-section {
+    flex: none;
+    width: 100%;
+  }
+}
+.logout-button {
+  float: right; /* Align the button to the right side of the navbar */
+  padding: 10px 20px;
+  margin: 30px; /* Or adjust to fit the navbar's height */
+  margin-right: 3rem;
+  background-color: #f44336; /* A red color for the logout button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.logout-button:hover {
+  background-color: #d53b30; /* A red color for the logout button */
+}
+
+/* Clearfix for the float */
+.navbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}

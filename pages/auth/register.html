@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0f96c8004a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Registracija</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+    <link rel="stylesheet" href="/styles/register.css" />
+  </head>
+  <body>
+    <a href="/index.html" class="back-button"
+      ><i class="fa-solid fa-arrow-left"></i
+    ></a>
+    <div class="register-container">
+      <form class="register-form" id="registerForm">
+        <h2>Registracija</h2>
+        <div class="input-group">
+          <label for="fullName">Uporabniško ime:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            placeholder="Vaše uporabniško ime"
+          />
+        </div>
+        <div class="input-group">
+          <label for="regEmail">E-pošta:</label>
+          <input
+            type="email"
+            id="regEmail"
+            name="email"
+            required
+            placeholder="Vaš E-mail"
+          />
+        </div>
+        <div class="input-group">
+          <label for="regPassword">Geslo:</label>
+          <input
+            type="password"
+            id="regPassword"
+            name="password"
+            required
+            placeholder="Vaše geslo"
+          />
+        </div>
+        <div class="input-group">
+          <label for="confirm-password">Potrdi geslo:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            placeholder="Potrdite geslo"
+          />
+        </div>
+        <button type="submit">Ustvari račun</button>
+        <a href="/pages/auth/login.html" class="login-button"
+          >Že imate račun? Prijavite se</a
+        >
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="/javascript/firebase.js"></script>
+    <script src="/javascript/register.js"></script>
+  </body>
+</html>
