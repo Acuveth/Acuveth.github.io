@@ -1,2 +1,2 @@
 ﻿# Predavanje-ChatGPT
-Generated the whole website using AI for teaching purposes.
+Generated the whole website using AI as an example for teaching purposes.
